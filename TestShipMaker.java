@@ -17,6 +17,9 @@ public class TestShipMaker {
 			if(var1 != null){
 				doStuff(enemyShip);
 			}
+			else{
+				System.out.println("Please enter a letter");
+			}
 			
 		}
 		
