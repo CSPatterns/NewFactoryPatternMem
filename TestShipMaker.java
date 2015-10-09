@@ -12,11 +12,21 @@ public class TestShipMaker {
 		if(scan.hasNext()){
 			
 			String var1 = scan.nextLine();
-			f.makeEnemyShip(var1);
+			EnemyShip enemyShip = f.makeEnemyShip(var1);
 			
+			if(var1 != null){
+				doStuff(enemyShip);
+			}
 			
 		}
 		
 	}
+	
+	public static void doStuff(EnemyShip enemyShip){
+		
+		enemyShip.printName();
+		
+	}
 
 }
+
