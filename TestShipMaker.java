@@ -7,8 +7,15 @@ public class TestShipMaker {
 	public static void main(String[] args) {
 		EnemyShipFactory f = new EnemyShipFactory();
 		Scanner scan = new Scanner(System.in);
-		String var1 = scan.nextLine();
-		f.makeEnemyShip(var1);
+		System.out.println("Enter a letter:");
+		
+		if(scan.hasNext()){
+			
+			String var1 = scan.nextLine();
+			f.makeEnemyShip(var1);
+			
+			
+		}
 		
 	}
 
